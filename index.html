@@ -1,8 +1,38 @@
 <!DOCTYPE html>
 <head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#9AD217">
+
+  <!-- import manifest -->
+  <link rel="stylesheet" href='./styles.css'>
+  <link rel="stylesheet" href='./layout.css'>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
 <body>
-    <span> HELLO WORLD! </span>
+  
+  <header>
+    <h1> Marc Vousden </h1>
+    <p> A collection of micro-projects to practice new elements in the expanding world of web development </p>
+    <nav>
+      <ul>
+        <li class="selected"> <button> <div> Latest </div> </button> </li>
+        <li> <button> <div> Front End </div> </button> </li>
+        <li> <button> <div> Back End </div> </button> </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="project-container">
+
+    <div class="project-card placeholder">
+      <div class="loading-border"></div>
+      <div class="loading-text">Loading Projects</div>
+    </div>
+
+  </section>
+
 </body>
 </html>

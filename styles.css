@@ -1,0 +1,73 @@
+/* == colors ==
+  green - #9AD217
+  orange - #EE9617
+  grey - #C4C4C4
+  dark grey - #8C8C8C
+*/
+
+/* animations */
+@keyframes spin{
+  0%,20%{
+    transform: rotate(0deg)
+  }
+  80%,100%{
+    transform: rotate(360deg)
+  }
+}
+
+
+
+
+html{
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* header styling */
+header{
+  background-color: #9AD217;
+}
+
+header h1, header p{
+  text-align:center;
+  color:white;
+}
+
+nav ul{
+  list-style:none;
+  padding:0px;
+  margin:0px;
+}
+
+nav ul li button{
+  background-color:white;
+  transform: skew(-30deg);
+}
+
+nav ul li button div{
+  transform: skew(30deg);
+}
+
+nav ul li button div{
+  font-weight:bold;
+  color: #C4C4C4
+}
+
+nav ul li.selected button div{
+  color: #EE9617
+}
+
+/* project styling */
+.project-card{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.loading-border{
+  border-radius: 100%;
+  border: 5px dashed #C4C4C4;
+  animation: spin 5s ease-in-out infinite;
+}
+.loading-text{
+  color:#8C8C8C;
+  font-weight:bold;
+}
