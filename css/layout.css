@@ -43,7 +43,7 @@ nav ul li button{
   padding: 1em 0em;
 }
 
-.project-card{
+.project-card, project-card{
   width:90%;
   margin:auto;
   margin-top: 1.5em;
@@ -63,6 +63,7 @@ nav ul li button{
   font-size:0.7em;
   font-weight: bold;
 }
+
 .loading-text{
   margin:auto;
   text-align:center;

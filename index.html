@@ -1,51 +1,50 @@
 <!DOCTYPE html>
-<head>
+  <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#9AD217">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#9AD217">
 
-  <!-- import manifest -->
-  <link rel="stylesheet" href='./styles.css'>
-  <link rel="stylesheet" href='./layout.css'>
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  
-  <script type="module">
-    import ProjectCard from '/components/ProjectCard.js'
-    customElements.define('project-card', ProjectCard)
+    <!-- import manifest -->
+    <link rel="stylesheet" href='./css/styles.css'>
+    <link rel="stylesheet" href='./css/layout.css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
+    <script type="module">
+      import ProjectCard from '/components/ProjectCard.js'
+      customElements.define('project-card', ProjectCard)
+    </script>
+
+  </head>
+
+  <body>
+    
+    <header>
+      <h1> Marc Vousden </h1>
+      <p> A collection of micro-projects to practice new elements in the expanding world of web development </p>
+      <nav>
+        <ul>
+          <li class="selected"> <button> <div> Latest </div> </button> </li>
+          <li> <button> <div> Front End </div> </button> </li>
+          <li> <button> <div> Back End </div> </button> </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="project-container">
+
+      <div class="project-card placeholder">
+        <div class="loading-border"></div>
+        <div class="loading-text">Loading Projects</div>
+      </div>
+      
+    </section>
+
+  </body>
+
+  <script type='module'>
+    import app from '/js/main.js';
+    document.myApp = app;
   </script>
-  
-</head>
 
-<body>
-  
-  <header>
-    <h1> Marc Vousden </h1>
-    <p> A collection of micro-projects to practice new elements in the expanding world of web development </p>
-    <nav>
-      <ul>
-        <li class="selected"> <button> <div> Latest </div> </button> </li>
-        <li> <button> <div> Front End </div> </button> </li>
-        <li> <button> <div> Back End </div> </button> </li>
-      </ul>
-    </nav>
-  </header>
-
-  <section id="project-container">
-
-    <div class="project-card placeholder">
-      <div class="loading-border"></div>
-      <div class="loading-text">Loading Projects</div>
-    </div>
-
-    <project-card class="project-card"
-      project-title = "Remake the Ninendo Switch Menu"
-      project-image = "/Images/SwitchUI.gif"
-      project-description = "ARIA compliant scrolling listbox web component with custom focus styling"
-      project-tags = "WAI-ARIA,Web Components"
-    ></project-card>
-
-  </section>
-
-</body>
 </html>
