@@ -46,6 +46,7 @@ nav ul li button{
 .project-card{
   width:90%;
   margin:auto;
+  margin-top: 1.5em;
 }
 
 .project-card.placeholder{

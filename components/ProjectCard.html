@@ -1,0 +1,67 @@
+<!-- == colors ==
+  green - #9AD217
+  orange - #EE9617
+  grey - #C4C4C4
+  dark grey - #8C8C8C
+-->
+<!DOCTYPE html>
+<head>
+  <style>
+    html{
+      background-color:green;
+    }
+    .container{
+      width:800px;
+      background-color:white;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .hero-img{
+      width:100%;
+    }
+
+    .tags{
+      list-style:none;
+      padding:0px;
+
+      display:flex;
+      flex-direction:row;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-size: 1.5em;
+    }
+    .tags li{
+      font-weight:bold;
+      color: #EE9617;
+      margin:0em 2em;
+    }
+
+    h2,p{
+      width:100%;
+      text-align: center;
+    }
+
+    .description{
+      margin:auto;
+      width:80%;
+      font-size: 1.5em;
+      color: #8C8C8C;
+      padding-bottom:1.5em;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container"> 
+    <img class="hero-img" src="/images/SwitchUI.gif"></img>
+    <ul class="tags">
+      <li> WAI-ARIA</li>
+      <li> Web Components </li>
+    </ul>
+    <h2 class="title"> Remake the Nintendo Switch Menu </h2>
+    <p class="description">
+      ARIA compliant scrolling listbox web component with custom focus styling
+    </p>
+  </div>
+</body>

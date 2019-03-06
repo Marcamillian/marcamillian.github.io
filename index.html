@@ -9,6 +9,12 @@
   <link rel="stylesheet" href='./styles.css'>
   <link rel="stylesheet" href='./layout.css'>
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  
+  <script type="module">
+    import ProjectCard from '/components/ProjectCard.js'
+    customElements.define('project-card', ProjectCard)
+  </script>
+  
 </head>
 
 <body>
@@ -31,6 +37,12 @@
       <div class="loading-border"></div>
       <div class="loading-text">Loading Projects</div>
     </div>
+
+    <project-card class="project-card"
+      project-title = "Remake the Ninendo Switch Menu"
+      project-image = "/Images/SwitchUI.gif"
+      project-description = "ARIA compliant scrolling listbox web component with custom focus styling"
+    ></project-card>
 
   </section>
 
