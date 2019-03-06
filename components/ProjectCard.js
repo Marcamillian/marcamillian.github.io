@@ -65,6 +65,13 @@ export default class ProjectCard extends HTMLElement{
     this.shadowRoot.querySelector('.hero-img').src = imageSrc;
     this.shadowRoot.querySelector('.title').innerHTML = title;
     this.shadowRoot.querySelector('.description').innerHTML = description;
+    
+    let tagList = this.shadowRoot.querySelector('ul.tags');
+    tags.forEach((tagString)=>{
+      let tag = document.createElement('li');
+      tag.innerHTML = tagString;
+      tagList.appendChild(tag)
+    })
     // do something about the tags
   }
 
@@ -81,7 +88,7 @@ export default class ProjectCard extends HTMLElement{
     // extract values from the attributes
     let imageSrc = this.getAttribute('project-image');
     let title = this.getAttribute('project-title');
-    let tags = this.getAttribute('project-tags');
+    let tags = this.getAttribute('project-tags').split(",");
     let description = this.getAttribute('project-description');
 
     this.render({imageSrc, title, tags, description})
