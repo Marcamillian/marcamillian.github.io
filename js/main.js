@@ -1,10 +1,7 @@
 import ServiceWorkerHelper from './SwHelper.js';
 import DbHelper from './DbHelper.js';
 
-let projectContainer = document.querySelector('#project-container');
-//const swHelper = ServiceWorkerHelper('sw.js', updateUIShow)
-const dbHelper = new DbHelper
-
+// functions
 const emptyHTML = (htmlElement)=>{
   while(htmlElement.children.length > 0){
     htmlElement.children[0].remove()
@@ -38,6 +35,11 @@ const showProjects = function showProjects(){
   .then( renderProjects )
   .catch( console.error ) 
 }
+
+// instance vaiables
+let projectContainer = document.querySelector('#project-container');
+const swHelper = ServiceWorkerHelper('sw.js', updateUIShow)
+const dbHelper = new DbHelper
 
 
 export default {

@@ -1,4 +1,4 @@
-//
+
 'use strict';
 
 console.log("Service worker doing something");
@@ -25,7 +25,7 @@ self.addEventListener('install', event =>{
         '/css/styles.css',
         'https://fonts.googleapis.com/css?family=Roboto',
         // js
-        '/js/app.js',
+        '/js/main.js',
         '/js/SwHelper.js',
         './js/DbHelper.js',
         '/components/ProjectCard.js'
@@ -58,11 +58,12 @@ self.addEventListener('fetch', event =>{
     event.respondWith(
       caches.match(event.request)
       .then(response=>{
-        return response || fetch(event.reqest)
+        return response || fetch(event.request)
       })
     )
   }
 })
+
 
 // listen for if we are told to take control
 self.addEventListener('message', event =>{
