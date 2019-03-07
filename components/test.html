@@ -1,0 +1,39 @@
+<!-- https://css-tricks.com/considerations-styling-modal/ -->
+<!DOCTYPE html>
+<head>
+
+  <style>
+    
+
+    my-modal{
+      display:flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content:space-around;
+      background-color: #000000cc;
+      width:90%;
+      padding:1em 5%;
+    }
+
+    my-modal h1{
+      width:100%;
+      text-align:center;
+      color:white;
+    }
+
+  </style>
+
+
+  <script type='module'>
+    import MyModal from './Modal.js';
+    customElements.define('my-modal', MyModal)
+  </script>
+</head>
+
+<body>
+  <my-modal class="blank">
+    <h1> Update available </h1>
+    <button> Update </button>
+    <button> Update Later </button>
+  </my-modal>
+</body>

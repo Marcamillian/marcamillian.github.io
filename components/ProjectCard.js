@@ -48,7 +48,7 @@ template.innerHTML = `
 
 </style>
 
-<img class="hero-img" src="/images/SwitchUI.gif"></img>
+<img class="hero-img"></img>
 <ul class="tags"></ul>
 <h2 class="title"></h2>
 <p class="description"></p>
