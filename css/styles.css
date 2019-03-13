@@ -68,3 +68,12 @@ nav ul li.selected button div{
   color:#8C8C8C;
   font-weight:bold;
 }
+
+/* modal styling */
+my-modal{
+  background-color: #000000cc;
+}
+my-modal h1{
+  color: white;
+  text-align:center;
+}

@@ -38,6 +38,8 @@ const showProjects = function showProjects(){
 
 // instance vaiables
 let projectContainer = document.querySelector('#project-container');
+let updateModal = document.querySelector('#update-modal');
+
 const swHelper = ServiceWorkerHelper('sw.js', updateUIShow)
 const dbHelper = new DbHelper
 

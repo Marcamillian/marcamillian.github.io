@@ -11,14 +11,22 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     
     <script type="module">
-      import ProjectCard from '/components/ProjectCard.js'
-      customElements.define('project-card', ProjectCard)
+      import ProjectCard from '/components/ProjectCard.js';
+      customElements.define('project-card', ProjectCard);
+
+      import MyModal from '/components/MyModal.js';
+      customElements.define('my-modal', MyModal);
     </script>
 
   </head>
 
   <body>
-    
+    <my-modal>
+      <h1> There is an update to this webpage </h1>
+      <button> Update Now </button>
+      <button> Update Later </button>
+    </my-modal>
+
     <header>
       <h1> Marc Vousden </h1>
       <p> A collection of micro-projects to practice new elements in the expanding world of web development </p>

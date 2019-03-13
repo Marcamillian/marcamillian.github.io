@@ -1,10 +1,9 @@
 
 'use strict';
-
 console.log("Service worker doing something");
 
 // create the caches for the files
-const staticCacheName = "static-v1.1";
+const staticCacheName = "static-v1.2";
 let allCaches= [
   staticCacheName
 ]
