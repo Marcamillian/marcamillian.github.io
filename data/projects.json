@@ -4,7 +4,8 @@
       "title": "Remake the Ninendo Switch Menu",
       "imageSrc": "Images/SwitchUI.gif",
       "description": "ARIA compliant scrolling listbox web component with custom focus styling",
-      "tags": "WAI-ARIA,Web Components"
+      "tags": "WAI-ARIA,Web Components",
+      "link-live": "https://marcamillian.github.io/UIMock_NSwitch/"
     },
     {
       "title": "Modal Custom Component",
