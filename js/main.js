@@ -17,13 +17,15 @@ const renderProjects = function renderProjects( projectArray ){
   
   projectContainer = emptyHTML(projectContainer);
   
-  projectArray.projects.forEach( ({ title, imageSrc, description, tags }= {}) =>{
+  projectArray.projects.forEach( ({ title, imageSrc, description, tags, demoLink }= {}) =>{
   
     let projectCard = document.createElement('project-card');
     projectCard.setAttribute('project-title', title);
     projectCard.setAttribute('project-image', imageSrc);
     projectCard.setAttribute('project-description', description);
     projectCard.setAttribute('project-tags', tags)
+    projectCard.setAttribute('demo-link', demoLink)
+    console.log(demoLink)
 
     projectContainer.appendChild(projectCard)
 

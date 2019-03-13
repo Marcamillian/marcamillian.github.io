@@ -46,12 +46,22 @@ template.innerHTML = `
     padding-bottom:1em;
   }
 
+  .demo-link{
+    padding-bottom:2em;
+  }
+  .demo-link a{
+    padding:1em;
+    margin:1em;
+    color:white;
+    background-color:#9AD217;
+  }
 </style>
 
 <img class="hero-img"></img>
 <ul class="tags"></ul>
 <h2 class="title"></h2>
 <p class="description"></p>
+<p class="demo-link"><a target=_blank>Visit Demo</a></p>
 
 `
 
@@ -61,10 +71,11 @@ export default class ProjectCard extends HTMLElement{
     super()
   }
 
-  render({imageSrc, title, tags, description}={}){
+  render({imageSrc, title, tags, description, demoLink}={}){
     this.shadowRoot.querySelector('.hero-img').src = imageSrc;
     this.shadowRoot.querySelector('.title').innerHTML = title;
     this.shadowRoot.querySelector('.description').innerHTML = description;
+    this.shadowRoot.querySelector('.demo-link a').href = demoLink;
     
     let tagList = this.shadowRoot.querySelector('ul.tags');
     tags.forEach((tagString)=>{
@@ -90,8 +101,9 @@ export default class ProjectCard extends HTMLElement{
     let title = this.getAttribute('project-title');
     let tags = this.getAttribute('project-tags').split(",");
     let description = this.getAttribute('project-description');
+    let demoLink = this.getAttribute('demo-link')
 
-    this.render({imageSrc, title, tags, description})
+    this.render({imageSrc, title, tags, description, demoLink})
   }
 
 }
