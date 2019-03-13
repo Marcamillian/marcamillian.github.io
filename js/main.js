@@ -40,9 +40,10 @@ const showProjects = function showProjects(){
 let projectContainer = document.querySelector('#project-container');
 let updateModal = document.querySelector('#update-modal');
 
-const swHelper = ServiceWorkerHelper('sw.js', updateUIShow)
+//const swHelper = ServiceWorkerHelper('sw.js', updateUIShow)
 const dbHelper = new DbHelper
 
+showProjects();
 
 export default {
   showProjects

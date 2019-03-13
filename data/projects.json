@@ -7,10 +7,10 @@
       "tags": "WAI-ARIA,Web Components"
     },
     {
-      "title": "Remake the Ninendo Switch Menu",
+      "title": "Modal Custom Component",
       "imageSrc": "Images/SwitchUI.gif",
-      "description": "ARIA compliant scrolling listbox web component with custom focus styling",
-      "tags": "WAI-ARIA,Web Components"
+      "description": "Custom Web component with keyboard trap",
+      "tags": "Web Components"
     }
   ]  
 }
