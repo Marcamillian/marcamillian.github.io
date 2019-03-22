@@ -25,7 +25,6 @@ const renderProjects = function renderProjects( projectArray ){
     projectCard.setAttribute('project-description', description);
     projectCard.setAttribute('project-tags', tags)
     projectCard.setAttribute('demo-link', demoLink)
-    console.log(demoLink)
 
     projectContainer.appendChild(projectCard)
 

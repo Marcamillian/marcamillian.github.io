@@ -8,8 +8,11 @@
     <!-- import manifest -->
     <link rel="stylesheet" href='./css/styles.css'>
     <link rel="stylesheet" href='./css/layout.css'>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (min-width:500px)" href="./css/layout_500to1000.css"> 
     
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+      
+
     <script type="module">
       import ProjectCard from '/components/ProjectCard.js';
       customElements.define('project-card', ProjectCard);
@@ -29,15 +32,17 @@
     </my-modal>
   -->
     <header>
-      <h1> Marc Vousden </h1>
-      <p> A collection of micro-projects to practice new elements in the expanding world of web development </p>
-      <nav>
-        <ul>
-          <li class="selected"> <button> <div> Latest </div> </button> </li>
-          <li> <button> <div> Front End </div> </button> </li>
-          <li> <button> <div> Back End </div> </button> </li>
-        </ul>
-      </nav>
+      <div id="header-container">
+        <h1> MicroProjects </h1>
+        <p> A collection of small scale projects to showcase new elements of web development </p>
+        <nav>
+          <ul>
+            <li class="selected"> <button> <div> Latest </div> </button> </li>
+            <li> <button> <div> Front End </div> </button> </li>
+            <li> <button> <div> Back End </div> </button> </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <section id="project-container">

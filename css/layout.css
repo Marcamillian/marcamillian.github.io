@@ -5,6 +5,7 @@ html{
 html, body{
   padding:0px;
   margin:0px;
+  min-width:320px;
 }
 
 /* header styling */
@@ -13,7 +14,11 @@ header{
   padding: 0.2em 0.5em;
 }
 
-header h1, header p{
+#header-container{
+  margin:auto;
+}
+
+header h1,header h2, header p{
   text-align:center;
 }
 
@@ -41,12 +46,15 @@ nav ul li button{
 
 #project-container{
   padding: 1em 0em;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content: center;
 }
 
 .project-card, project-card{
   width:90%;
-  margin:auto;
-  margin-top: 1.5em;
+  margin:1.5em;
 }
 
 .project-card.placeholder{

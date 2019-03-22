@@ -25,7 +25,7 @@ header{
   background-color: #9AD217;
 }
 
-header h1, header p{
+header h1,header h2, header p{
   text-align:center;
   color:white;
 }
