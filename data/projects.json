@@ -9,9 +9,10 @@
     },
     {
       "title": "Modal Custom Component",
-      "imageSrc": "Images/SwitchUI.gif",
-      "description": "Custom Web component with keyboard trap",
-      "tags": "Web Components"
+      "imageSrc": "Images/ModalComponent.gif",
+      "description": "Stylable, ARIA compliant Web Component",
+      "tags": "Web Components",
+      "demoLink": "https://marcamillian.github.io/ModalComponent/"
     }
   ]  
 }
